@@ -1,0 +1,212 @@
+body {
+    background-color: black;
+    background-image: url(../media/IMG_20200313_015347983.jpg);
+    background-position: 70%;
+    
+}
+
+@font-face {
+    font-family: "josefine";
+    src: url(./Font/JosefinSans-Medium.ttf);
+}
+ 
+*{font-family: "josefine";}
+
+
+.logo { 
+  width: 30%; height: 30%; 
+  border: solid 5px;
+  border-color: white;
+  margin-left: 35%;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+}
+
+img {
+ width: 6em; 
+ height: 10em;
+ margin-left: 5%; 
+}
+
+h2 { 
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: solid 5px;
+    border-color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 1em;
+    animation-duration: 1s;
+    animation-name: movimientotitulo;
+    animation-iteration-count: 1;
+}
+
+p { 
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    border: solid 5px;
+    border-color: white;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0.5em;
+}
+
+a { 
+    color: white;
+    text-decoration: none;
+   
+}
+
+footer { 
+    background-color: black; 
+    border: solid 5px;
+    border-color: white;
+    margin-top: 1em;
+}
+
+
+ul  { 
+    font-size: 1.5em;
+    background-color: black;
+    border: solid 5px;
+    border-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    padding: 0.25em;
+    
+}
+
+li {
+
+ display: inline;
+ 
+ 
+}
+
+.secciones {
+    
+    display: inline;
+    margin-left: 35%;
+    
+   
+}
+
+label { 
+ color: white;
+ text-align: left;
+}
+
+form {
+    text-align: center; 
+    font-size: medium;
+    background-color: black;
+    border: solid 5px;
+    border-color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.conta { 
+    display: block;
+    margin-left: 25%;
+ 
+  
+ 
+
+}
+
+iframe {
+     margin-left: 20%;
+}
+
+.foot {
+    display: block;
+    text-align: center;
+    padding: 0.25em;
+    
+}
+
+.producto {
+    background-color: black;
+    height: 400px;
+    width: 650px;
+    border: solid;
+    border-color: white;
+    margin-left: 25%;
+
+}
+
+.text {margin-top: 20%;}
+  
+@media (max-width: 450px) 
+{h2 
+     { font-size: 75%;
+     } 
+    
+ iframe 
+    { height: 200px;
+     width: 200px;
+     margin-left: none;
+     } 
+    
+ nav 
+        {display: block;
+         font-size: small;
+         
+        } 
+    
+ .conta 
+        {width: 75px;
+        height: 25px;
+        margin-top: 5px;
+        margin-right: 25%;
+        
+        } 
+    
+ p 
+        {font-size: small;
+        } 
+    
+ li
+       { display: block;
+          margin: 5px;
+         
+        } 
+    
+ img
+        { width: 5em; 
+       height: 9em;
+       }
+    
+ .secciones
+        { margin-left: 50px;}
+    
+ body { background-position: 50%;
+    }
+ 
+ .producto  {width: 50%;
+    height: 25%;
+     } 
+}
+
+@keyframes aparecer { 
+    0% {opacity: 0;}
+ 100% {opacity: 1;}   
+}
+
+@keyframes movimientotitulo { 
+    from { transform: translate(110vh);}
+    to {transform: translate(0);}
+}
+   
+
+   
+
+
+ 
