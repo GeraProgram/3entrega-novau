@@ -8,41 +8,69 @@
      <meta name="keywords" content="cultivo , hidroponia , caba , instagram , whatsapp">
      <title>HidroCult - Contacto</title>
      <link rel="shortcut icon" href="../media/Hidrocult_Isologotipo_Blanco.png" type="image/x-icon">
-
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
      <link rel="stylesheet" href="../css/main.css">
 
     </head>
  <body>
-     <header><img class="logo" src="../media/Hidrocult_Isologotipo_Blanco.png" alt=""></header>
+    <header>
+        <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/quienessomos.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tienda
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/equipos.html">Equipos</a></li>
+                      <li><a class="dropdown-item" href="../pages/nutrientes.html">Nutrientes</a></li>
+                      <li><a class="dropdown-item" href="../pages/medidores.html">Dispositivos de medicion</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html" >Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
 
-     <nav>
-         <ul>
-             <li><a href="../pages/equipos.html">Equipos de cultivo</a></li>
-             <li><a href="../pages/nutrientes.html">Nutrientes</a></li>
-              <li><a href="../pages/medidores.html">Dispositivos de medicion</a></li>
-             <li><a href="../pages/contacto.html">Contacto</a></li>
-             <li><a href="../pages/quienessomos.html">Quienes somos</a></li>
-            </ul>
 
-         <form action="" method="get" enctype="text/plain"> 
-         <label for="busqueda"></label>
-         <input type="search" name="busqueda" id="busqueda" value="Buscar">
-             </form>
-        </nav>
+         <img class="logo" src="../media/Hidrocult_Isologotipo_Blanco.png" alt="">
+        
+        </header>
     
      <h2>Contactanos</h2>
 
      <p>Puedes enviarnos tus dudas sobre productos y/o cultivo y pronto nos pondremos en contacto</p> 
      
-     <form action="" method="get">
-         <label class="conta" for="nombre">Nombre y Apellido</label> 
-         <input class="conta" type="nombre" name="nombre"> 
-         <label class="conta" for="mail">Mail</label> 
-         <input class="conta" type="email" name="mail"> 
-         <label class="conta" for="mensaje">Mensaje</label> 
-         <textarea class="conta" name="mensaje" id="mensaje" cols="30" rows="10"></textarea> 
-         <button class="conta" >Enviar</button>
-        </form> 
+     <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ej Juan Perez">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
 
      <p>Tambien podes visitarnos en nuestra oficina en CABA</p>        
 
@@ -54,6 +82,6 @@
          <a class="foot" target="_blank" href="https://www.instagram.com/hidrocultz/">Instagram: @HidroCultz</a>  
          <a class="foot" href="../index.html">Home</a>
         </footer>
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>
 </html>

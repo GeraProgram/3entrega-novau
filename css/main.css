@@ -69,7 +69,7 @@ footer {
     margin-top: 1em;
 }
 
-
+/*
 ul  { 
     font-size: 1.5em;
     background-color: black;
@@ -87,8 +87,7 @@ li {
  display: inline;
  
  
-}
-
+} */
 .secciones {
     
     display: inline;
@@ -101,7 +100,7 @@ label {
  color: white;
  text-align: left;
 }
-
+/*
 form {
     text-align: center; 
     font-size: medium;
@@ -120,7 +119,7 @@ form {
  
 
 }
-
+*/
 iframe {
      margin-left: 20%;
 }
@@ -143,7 +142,17 @@ iframe {
 }
 
 .text {margin-top: 20%;}
-  
+
+
+@media  (min-width: 450px)
+{
+    .mb-3 {margin-right: 10%;
+        margin-left: 10%;
+      } 
+    
+}
+
+
 @media (max-width: 450px) 
 {h2 
      { font-size: 75%;
@@ -154,7 +163,7 @@ iframe {
      width: 200px;
      margin-left: none;
      } 
-    
+   /* 
  nav 
         {display: block;
          font-size: small;
@@ -168,16 +177,16 @@ iframe {
         margin-right: 25%;
         
         } 
-    
+    */
  p 
         {font-size: small;
         } 
-    
+    /*
  li
        { display: block;
           margin: 5px;
          
-        } 
+        }*/ 
     
  img
         { width: 5em; 
