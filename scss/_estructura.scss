@@ -1,0 +1,107 @@
+/*@mixin alto-ancho ($heigth, $width){
+   height: $heigth ;
+    width:$width ;}*/
+
+body {background-position: 70%;
+    background-image: $fondo;
+
+     
+ header{ .logo { width: 30%; height: 30%; 
+        border: solid 5px;
+        border-color: $blanco;
+        margin-left: 35%;
+        margin-top: 3%;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+       }
+        
+      
+    }
+
+ main { 
+      h2 { 
+          font-size: 35px;
+          text-align: center;
+          color: $blanco;
+          background-color: $negro;
+          border: solid 5px;
+          border-color: $blanco;
+          margin-left: 25%;
+          margin-right: 25%;
+          margin-top: 1%;
+          padding: 1em;
+      
+        
+         animation-duration: 1s;
+         animation-name: movimientotitulo;
+         animation-iteration-count: 1;
+        }
+     p { 
+         font-size: 25px;
+         color: $blanco;
+         background-color: $negro;
+         border: solid 5px;
+         border-color: $blanco;
+         text-align: center;
+         margin-left: 10%;
+         margin-right: 10%;
+         margin-top: 3%;
+         padding: 0.5em;
+     }
+     .producto {
+      /*@include alto-ancho(400px; , 650px; )*/
+      background-color: $negro;
+
+        height: 400px;
+        width: 650px;
+        border: solid;
+        border-color: $blanco;
+        margin-left: 25%;
+    
+     }
+        
+     img { width: 6em; 
+           height: 10em;
+          margin-left: 5%;
+          
+          
+        } 
+        .secciones {
+    
+            display: inline;
+            margin-left: 35%; 
+        }
+
+     a { 
+        color: $blanco;
+        text-decoration: none;
+       
+     }
+      
+     label { 
+        color: $blanco;
+        text-align: left;
+       }
+
+     iframe {
+        margin-left: 20%;
+     }
+    }
+      
+ footer {  
+        background-color: $negro; 
+        border: solid 5px;
+        border-color: $blanco;
+        margin-top: 1em;
+        
+     .foot { display: block;
+        text-align: center;
+        padding: 0.25em; 
+        color: $blanco;
+        }
+    }
+}
+    
+
+

@@ -6,55 +6,9 @@ html {
   font-family: josefine;
 }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes movimientotitulo {
-  from {
-    transform: translate(110vh);
-  }
-  to {
-    transform: translate(0);
-  }
-}
-@media only screen and (max-width: 450px) {
-  h2 {
-    font-size: small;
-  }
-  iframe {
-    height: 200px;
-    width: 200px;
-    margin-left: none;
-  }
-  p {
-    font-size: small;
-  }
-  img {
-    width: 5em;
-    height: 9em;
-  }
-  .secciones {
-    margin-left: 50px;
-  }
-  body {
-    background-position: 50%;
-  }
-  .producto {
-    width: 50%;
-    height: 25%;
-  }
-}
-@media only screen and (min-width: 450px) {
-  form {
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-}
+/*@mixin alto-ancho ($heigth, $width){
+   height: $heigth ;
+    width:$width ;}*/
 body {
   background-position: 70%;
   background-image: url("../media/IMG_20200313_015347983.jpg");
@@ -70,9 +24,6 @@ body header .logo {
   animation-name: aparecer;
   animation-iteration-count: 1;
 }
-body main { /* display: inline ;
- flex-direction: row;
- justify-content: center;*/ }
 body main h2 {
   font-size: 35px;
   text-align: center;
@@ -101,6 +52,7 @@ body main p {
   padding: 0.5em;
 }
 body main .producto {
+  /*@include alto-ancho(400px; , 650px; )*/
   background-color: black;
   height: 400px;
   width: 650px;
@@ -141,9 +93,25 @@ body footer .foot {
   color: white;
 }
 
-@media screen and (max-width: 450px) {
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes movimientotitulo {
+  from {
+    transform: translate(110vh);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@media only screen and (max-width: 450px) {
   h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
   iframe {
     height: 200px;
@@ -156,6 +124,7 @@ body footer .foot {
   img {
     width: 5em;
     height: 9em;
+    margin: none;
   }
   .secciones {
     margin-left: 50px;
@@ -168,7 +137,7 @@ body footer .foot {
     height: 25%;
   }
 }
-@media screen and (min-width: 450px) {
+@media only screen and (min-width: 450px) {
   form {
     margin-right: 10%;
     margin-left: 10%;
