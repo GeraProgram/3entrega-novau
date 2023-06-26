@@ -1,0 +1,148 @@
+@import 'tipografia';
+@import 'colores';
+@import 'imagenes';
+@import 'medidas';
+@import'animaciones';
+@import 'mediaq';
+
+
+body {background-position: 70%;
+    background-image: $fondo;
+
+     
+ header{ .logo { width: 30%; height: 30%; 
+        border: solid 5px;
+        border-color: $blanco;
+        margin-left: 35%;
+        margin-top: 3%;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: 1; }
+       
+    }
+
+ main { /* display: inline ;
+         flex-direction: row;
+         justify-content: center;*/
+      h2 { 
+          font-size: 35px;
+          text-align: center;
+          color: white;
+          background-color: black;
+          border: solid 5px;
+          border-color: white;
+          margin-left: 25%;
+          margin-right: 25%;
+          margin-top: 1%;
+          padding: 1em;
+      
+        
+         animation-duration: 1s;
+         animation-name: movimientotitulo;
+         animation-iteration-count: 1;
+        }
+     p { 
+         font-size: 25px;
+         color: $blanco;
+         background-color: $negro;
+         border: solid 5px;
+         border-color: $blanco;
+         text-align: center;
+         margin-left: 10%;
+         margin-right: 10%;
+         margin-top: 3%;
+         padding: 0.5em;
+     }
+     .producto {
+        background-color: $negro;
+        height: 400px;
+        width: 650px;
+        border: solid;
+        border-color: $blanco;
+        margin-left: 25%;
+    
+     }
+        
+     img { width: 6em; 
+           height: 10em;
+          margin-left: 5%;
+          
+          
+        } 
+        .secciones {
+    
+            display: inline;
+            margin-left: 35%; 
+        }
+
+     a { 
+        color: $blanco;
+        text-decoration: none;
+       
+     }
+      
+     label { 
+        color: white;
+        text-align: left;
+       }
+
+     iframe {
+        margin-left: 20%;
+     }
+    }
+      
+ footer {  
+        background-color: black; 
+        border: solid 5px;
+        border-color: white;
+        margin-top: 1em;
+        
+     .foot { display: block;
+        text-align: center;
+        padding: 0.25em; 
+        color: $blanco;
+        }
+    }
+}
+    
+
+
+@media screen and (max-width: 450px) 
+ { 
+    h2 
+     { font-size: 15px;
+     } 
+    
+   iframe 
+    { height: 200px;
+     width: 200px;
+     margin-left: none;
+     } 
+
+   p 
+        {font-size: small;
+    } 
+ 
+   img
+     { width: 5em; 
+       height: 9em;
+    }
+    
+   .secciones
+        { margin-left: 50px;}
+    
+ body { background-position: 50%;
+    }
+ 
+ .producto  {width: 50%;
+    height: 25%;
+     } 
+}
+
+@media screen and (min-width: 450px)
+{
+    form {margin-right: 10%;
+        margin-left: 10%;
+      } 
+    
+}

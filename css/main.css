@@ -1,13 +1,13 @@
 body {
     background-color: black;
-    background-image: url(../media/IMG_20200313_015347983.jpg);
+    background-image: url("../media/IMG_20200313_015347983.jpg");
     background-position: 70%;
     
 }
 
 @font-face {
     font-family: "josefine";
-    src: url(./Font/JosefinSans-Medium.ttf);
+    src: url("./Font/JosefinSans-Medium.ttf");
 }
  
 *{font-family: "josefine";}
@@ -18,6 +18,7 @@ body {
   border: solid 5px;
   border-color: white;
   margin-left: 35%;
+  margin-top: 3%;
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: 1;
@@ -29,20 +30,6 @@ img {
  margin-left: 5%; 
 }
 
-h2 { 
-    font-size: 35px;
-    text-align: center;
-    color: white;
-    background-color: black;
-    border: solid 5px;
-    border-color: white;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 1em;
-    animation-duration: 1s;
-    animation-name: movimientotitulo;
-    animation-iteration-count: 1;
-}
 
 p { 
     font-size: 25px;
@@ -53,6 +40,7 @@ p {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 3%;
     padding: 0.5em;
 }
 
@@ -69,25 +57,7 @@ footer {
     margin-top: 1em;
 }
 
-/*
-ul  { 
-    font-size: 1.5em;
-    background-color: black;
-    border: solid 5px;
-    border-color: white;
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: center;
-    padding: 0.25em;
-    
-}
 
-li {
-
- display: inline;
- 
- 
-} */
 .secciones {
     
     display: inline;
@@ -100,26 +70,7 @@ label {
  color: white;
  text-align: left;
 }
-/*
-form {
-    text-align: center; 
-    font-size: medium;
-    background-color: black;
-    border: solid 5px;
-    border-color: white;
-    margin-left: 25%;
-    margin-right: 25%;
-}
 
-.conta { 
-    display: block;
-    margin-left: 25%;
- 
-  
- 
-
-}
-*/
 iframe {
      margin-left: 20%;
 }
@@ -146,7 +97,7 @@ iframe {
 
 @media  (min-width: 450px)
 {
-    .mb-3 {margin-right: 10%;
+    form {margin-right: 10%;
         margin-left: 10%;
       } 
     
@@ -154,7 +105,7 @@ iframe {
 
 
 @media (max-width: 450px) 
-{h2 
+ {h2 
      { font-size: 75%;
      } 
     
@@ -163,35 +114,15 @@ iframe {
      width: 200px;
      margin-left: none;
      } 
-   /* 
- nav 
-        {display: block;
-         font-size: small;
-         
-        } 
-    
- .conta 
-        {width: 75px;
-        height: 25px;
-        margin-top: 5px;
-        margin-right: 25%;
-        
-        } 
-    */
+
  p 
         {font-size: small;
-        } 
-    /*
- li
-       { display: block;
-          margin: 5px;
-         
-        }*/ 
-    
+    } 
+ 
  img
         { width: 5em; 
        height: 9em;
-       }
+    }
     
  .secciones
         { margin-left: 50px;}

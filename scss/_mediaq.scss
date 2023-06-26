@@ -1,0 +1,41 @@
+
+
+@media only screen and (max-width: 450px) 
+ { 
+    h2 
+     { font-size: small;
+     } 
+    
+   iframe 
+    { height: 200px;
+     width: 200px;
+     margin-left: none;
+     } 
+
+   p 
+        {font-size: small;
+    } 
+ 
+   img
+     { width: 5em; 
+       height: 9em;
+    }
+    
+   .secciones
+        { margin-left: 50px;}
+    
+ body { background-position: 50%;
+    }
+ 
+ .producto  {width: 50%;
+    height: 25%;
+     } 
+}
+
+@media only screen and (min-width: 450px)
+{
+    form {margin-right: 10%;
+        margin-left: 10%;
+      } 
+    
+}
