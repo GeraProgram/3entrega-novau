@@ -2,41 +2,71 @@
 
 @media only screen and (max-width: 450px) 
  { 
-    h2 
+     h2 
      { font-size: 20px;
-     } 
-    
-   iframe 
-    { height: 200px;
-     width: 200px;
-     margin-left: none;
-     } 
-
-   p 
-        {font-size: small;
     } 
- 
+    
+    p 
+     {font-size: 15px ;
+    } 
+
+   iframe 
+     { @include alto-ancho (200px,200px);
+    } 
+
+  
    img
-     { width: 5em; 
-       height: 9em;
-       margin: none;
+     { @include alto-ancho (8em,5em);
+       @include margenes (7% , 0 ,0) ; 
     }
     
    .secciones
-        { margin-left: 50px;}
+     {@include margenes (50px , 0 , 0);
+    } 
     
- body { background-position: 50%;
+    body 
+     { background-position: 50%;
     }
  
- .producto  {width: 50%;
-    height: 25%;
-     } 
+   .producto  {
+     @include alto-ancho (250px, 340px);
+    } 
+ 
 }
 
 @media only screen and (min-width: 450px)
 {
-    form {margin-right: 10%;
-        margin-left: 10%;
-      } 
+    form {
+        @include margenes (10%,10%,0);
+    } 
+      
+    img {
+     @include alto-ancho (11em,9em);
+     @include margenes(2%,0,0);
+        
+    }
+
+    .secciones {
     
+     display: inline;
+     @include margenes(35%,0,0);
+    }  
+    
+    h2 {
+      font-size: 30px;
+    }
+   
+    p {
+      font-size: 20px;
+    } 
+    
+    .producto {
+     background-color: $negro;
+     @include alto-ancho (400px,650px);
+     border: solid;
+     border-color: $blanco;
+     @include margenes(25%,0,0);
+    }
+         
+       
 }

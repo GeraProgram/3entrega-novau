@@ -1,0 +1,8 @@
+@mixin alto-ancho ($heigth , $width) 
+{  height: $heigth ;
+    width: $width ;
+}
+@mixin margenes ($margin-left , $margin-rigth, $margin-top)
+ {margin-left: $margin-left;
+ margin-right: $margin-rigth;
+margin-top: $margin-top;}
