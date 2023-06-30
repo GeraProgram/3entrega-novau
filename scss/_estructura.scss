@@ -18,7 +18,7 @@ header{
 }
 
 main { 
-   h2 { 
+   h1 { 
          
      text-align: center;
      color: $blanco;
@@ -31,7 +31,18 @@ main {
      animation-name: movimientotitulo;
      animation-iteration-count: 1;
    }
-     
+   
+   .carousel { 
+      @include alto-ancho (10%, 50%);
+      @include margenes (25%,0,0);
+   }
+
+   form { background-color: $negro;
+           @include alto-ancho (25%, 75%);
+          padding: 5%;
+          
+          @include margenes (13%,13%,0);
+        } 
    p { 
       color: $blanco;
       background-color: $negro;
@@ -42,12 +53,7 @@ main {
       padding: 0.5em;
    }
      
-  .producto {
-      background-color: $negro;
-      border: solid;
-      border-color: $blanco;
    
-   }
         
      
    a { 

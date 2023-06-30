@@ -24,7 +24,7 @@ header .logo {
   animation-iteration-count: 1;
 }
 
-main h2 {
+main h1 {
   text-align: center;
   color: white;
   background-color: black;
@@ -38,6 +38,22 @@ main h2 {
   animation-name: movimientotitulo;
   animation-iteration-count: 1;
 }
+main .carousel {
+  height: 10%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 0;
+  margin-top: 0;
+}
+main form {
+  background-color: black;
+  height: 25%;
+  width: 75%;
+  padding: 5%;
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-top: 0;
+}
 main p {
   color: white;
   background-color: black;
@@ -48,11 +64,6 @@ main p {
   margin-right: 10%;
   margin-top: 3%;
   padding: 0.5em;
-}
-main .producto {
-  background-color: black;
-  border: solid;
-  border-color: white;
 }
 main a {
   color: white;
@@ -102,7 +113,7 @@ footer .foot {
   }
 }
 @media only screen and (max-width: 450px) {
-  h2 {
+  h1 {
     font-size: 20px;
   }
   p {
@@ -112,60 +123,27 @@ footer .foot {
     height: 200px;
     width: 200px;
   }
-  img {
-    height: 8em;
-    width: 5em;
-    margin-left: 7%;
+  .card {
+    margin-left: 0;
     margin-right: 0;
-    margin-top: 0;
-  }
-  .secciones {
-    margin-left: 50px;
-    margin-right: 0;
-    margin-top: 0;
+    margin-top: 5%;
   }
   body {
     background-position: 50%;
   }
-  .producto {
-    height: 250px;
-    width: 340px;
-  }
 }
 @media only screen and (min-width: 450px) {
-  form {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 0;
-  }
-  img {
-    height: 11em;
-    width: 9em;
-    margin-left: 2%;
+  .card {
+    margin-left: 37%;
     margin-right: 0;
-    margin-top: 0;
+    margin-top: 5%;
+    padding: none;
   }
-  .secciones {
-    display: inline;
-    margin-left: 35%;
-    margin-right: 0;
-    margin-top: 0;
-  }
-  h2 {
+  h1 {
     font-size: 30px;
   }
   p {
     font-size: 20px;
-  }
-  .producto {
-    background-color: black;
-    height: 400px;
-    width: 650px;
-    border: solid;
-    border-color: white;
-    margin-left: 25%;
-    margin-right: 0;
-    margin-top: 0;
   }
 }
 
