@@ -18,7 +18,7 @@ header{
 }
 
 main { 
-   h1 { 
+   .titulos { 
          
      text-align: center;
      color: $blanco;
@@ -32,9 +32,10 @@ main {
      animation-iteration-count: 1;
    }
    
+   
    .carousel { 
-      @include alto-ancho (10%, 50%);
-      @include margenes (25%,0,0);
+      @include alto-ancho (5%, 35%);
+      @include margenes (32%,0,1%);
    }
 
    form { background-color: $negro;
@@ -58,7 +59,7 @@ main {
      
    a { 
       color: $blanco;
-      text-decoration: none;
+     text-decoration: none;
        
    }
       
@@ -70,6 +71,8 @@ main {
    iframe {
       @include margenes(20%,0,0);
    }
+
+   
 }
       
 footer { 

@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 450px) 
  { 
-     h1 
+     .titulos
      { font-size: 20px;
     } 
     
@@ -14,7 +14,8 @@
      { @include alto-ancho (200px,200px);
     } 
    
-    .card { @include margenes (0,0,5%);}
+    .card {
+       @include margenes (0,0,5%);}
   
     
     body 
@@ -27,13 +28,20 @@
 
 @media only screen and (min-width: 450px)
 {
-   
-      
-    .card {
-      
-      @include margenes (37%,0,5%); padding: none;}
+  #cardproduct { 
+    @include alto-ancho(50%,100%) ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;}
 
-    h1 {
+    #doble { @include alto-ancho (430px, 319px ); }
+    
+    .card { 
+      
+      @include margenes (17%,0,5%); padding: none;
+    }
+
+    .titulos {
       font-size: 30px;
     }
    
